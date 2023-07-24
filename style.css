@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    ---body-color---:  rgb(249, 247, 247); 
+
+    ---heading-color---:red;
+    ---text-color---:  rgb(24, 24, 24);  
+    
+}
+.dark-mood{
+    --heading--color:red;
+    ---text-color---:  rgb(239, 230, 230); 
+    ---body-color---:rgb(6, 6, 6);
+     
+}
+body{
+    background-color: var(---body-color---);
+    color: var(---text-color---);
+    transition: background 0.8s , color 0.8s ;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+header .left-side h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(---text-color---);
+}
+header .right-side #toggle{
+    padding: 8px 20px;
+    background-color: var(---heading-color---);
+    border-radius: 8px;
+    cursor: pointer;
+}
+header .right-side #toggle h3{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(---text-color---);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+main .content-box{
+    padding: 2.5rem 19rem;
+}
+main .content-box .heading{
+    margin: 8px 0px;
+}
+main .content-box .heading h3{
+    color: var(---heading-color---);
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+main .content-box .date{
+    margin-bottom: 10px;
+    word-spacing: 1px;
+    color: var(---text-color---);
+}
+main .content-box .para{
+    text-align: justify;
+}
+main .content-box .para p{
+    font-weight: 400;
+    color: var(---text-color---);
+}
